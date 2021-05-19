@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+<model name="5deg_convex">
+  <!-- Give the base link a unique name -->
+  <link name="base">
+    <pose>0 0 0 0 0 0</pose>
+    <inertial>
+      <pose>0 0 0 0 0 0</pose>
+      <mass>73.82</mass>
+      <inertia> 
+        <ixx>6.64</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>55.47</iyy>
+        <iyz>0</iyz>
+        <izz>62.05</izz>
+      </inertia>
+    </inertial>
+    <collision name="base_collision">
+      <geometry>
+        <mesh>
+          <uri>model://5deg_convex/meshes/5deg_convex.stl</uri> 
+          <scale>1 1 1</scale>
+        </mesh>
+      </geometry>
+    </collision>
+
+    <!-- The visual is mostly a copy of the collision -->
+    <visual name="base_visual">
+      <!-- Offset the visual by have the base's height. We are not rotating
+           mesh since symmetrical -->
+      <geometry>
+        <mesh>
+              <uri>model://5deg_convex/meshes/5deg_convex.stl</uri>
+        <scale>1 1 1</scale>
+        </mesh>
+      </geometry>
+    </visual>
+  </link>
+
+</model>
+</sdf>

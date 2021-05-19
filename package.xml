@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>eurobench_uneven_terrain</name>
+  <version>0.0.0</version>
+  <description>Simulation worlds for Eurobench uneven terrain model</description>
+  <maintainer email="sergi.garcia@pal-robotics.com">Sergi Garcia</maintainer>
+  <license>LGPL-3.0</license>
+  <author email="sergi.garcia@pal-robotics.com">Sergi Garcia</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+
+</package>
